@@ -1,0 +1,194 @@
+.header
+    position: relative
+    z-index: 1
+    margin: 0 0 100px 0
+    padding: 155px 0 125px 0
+    // background-image: url(../images/bg-header-stars.png)
+    // background-position: 50%
+    // background-size: auto 1164px
+    // background-repeat: no-repeat
+    background-color: #0E0F12
+    @media (max-width: 900px)
+        padding: 160px 0 80px 0
+        overflow: hidden
+    @media (max-width: 700px)
+        margin: 0
+        padding: 60px 0
+    &::after
+        content: ""
+        display: block
+        position: absolute
+        left: 50%
+        top: 50%
+        z-index: 3
+        transform: translate(-50%,-50%)
+        width: 663px
+        height: 663px
+        background-color: #0E0F12
+        border-radius: 50%
+        @media (max-width: 700px)
+            top: 178px
+            transform: translate(-50%, 0)
+            width: 942px
+            height: 942px
+    &__fon
+        position: absolute
+        left: 50%
+        top: 0
+        z-index: 2
+        transform: translate(-50%, 0)
+        width: 100%
+        height: 100%
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            z-index: 3
+            width: 100%
+            height: 100%
+        @media (max-width: 700px)
+            top: -74px
+            width: 1000px
+            height: 1000px
+    .wrapper
+        display: flex
+        flex-direction: column
+        position: relative
+        z-index: 4
+
+        .header-title
+            margin: 0 0 90px 0
+            @media (max-width: 900px)
+                margin: 0 0 60px 0
+            @media (max-width: 700px)
+                margin: 0 0 24px 0
+            h4
+                color: #DCBA60
+                font-size: 24px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                letter-spacing: 4.8px
+                text-transform: uppercase
+                @media (max-width: 900px)
+                    font-size: 20px
+                    letter-spacing: 4px
+                @media (max-width: 700px)
+                    font-size: 18px
+                    letter-spacing: 3.6px
+                    text-align: center
+            h1
+                margin: 0 0 0 -14px
+                font-size: 160px
+                font-style: normal
+                font-weight: 400
+                line-height: 1
+                letter-spacing: -12.8px
+                background: linear-gradient(270deg, #F9F7EF 0%, #C3C1BD 98.57%)
+                background-clip: text
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                @media (max-width: 900px)
+                    margin: 0 0 0 -8px
+                    font-size: 100px
+                    letter-spacing: -8px
+                @media (max-width: 700px)
+                    margin: 0 auto
+                    font-size: 64px
+                    letter-spacing: -5.12px
+                    text-align: center
+        .header-date
+            align-self: flex-end
+            margin: 0 0 60px 0
+            padding: 16px 32px
+            border-radius: 400px
+            border: 1px solid rgba(255, 255, 255, 0.08)
+            background: rgba(255, 255, 255, 0.15)
+            box-shadow: 0px 2px 3.3px 0px rgba(224, 137, 0, 0.08)
+            backdrop-filter: blur(30px)
+            @media (max-width: 700px)
+                align-self: center
+                padding: 12px 24px
+            
+            span
+                display: inline-flex
+                align-items: center
+                position: relative
+                color: rgba(255, 255, 255, 0.80)
+                text-align: center
+                font-family: "Inter", sans-serif
+                font-optical-sizing: auto
+                font-style: normal
+                font-variation-settings: "slnt" 0
+                font-size: 24px
+                font-weight: 500
+                line-height: normal
+                @media (max-width: 900px)
+                    font-size: 20px
+                @media (max-width: 700px)
+                    font-size: 18px
+                &::before
+                    content: ""
+                    display: block
+                    width: 16px
+                    height: 16px
+                    margin: 0 10px 0 0
+                    background-color: #3ACA62
+                    border-radius: 50%
+                    @media (max-width: 900px)
+                        width: 12px
+                        height: 12px
+        .header-content
+            width: 680px
+            margin: 0 0 40px 0
+            @media (max-width: 900px)
+                max-width: 100%
+                margin: 0 auto 40px auto
+            p
+                margin: 0
+                color: rgba(255, 255, 255, 0.80)
+                font-family: "Inter", sans-serif
+                font-size: 20px
+                font-style: normal
+                font-weight: 500
+                line-height: 150%
+                letter-spacing: -0.4px
+                @media (max-width: 900px)
+                    text-align: center
+        .header-btn
+            align-self: flex-start
+            margin: 0 0 50px 0
+            padding: 24px 64px
+            @media (max-width: 900px)
+                align-self: center
+            @media (max-width: 700px)
+                margin: 0 0 60px 0
+        .header-partners
+            display: flex
+            align-items: center
+            gap: 64px
+            opacity: 0.75
+            @media (max-width: 900px)
+                gap: 56px
+                justify-content: center
+            @media (max-width: 700px)
+                flex-wrap: wrap
+                gap: 20px
+            img
+                width: auto
+                height: 33px
+                @media (max-width: 900px)
+                    height: 31px
+                &:first-child
+                    height: 20px
+                    @media (max-width: 900px)
+                        height: 19px
+                &:nth-child(2)
+                    height: 24px
+                    @media (max-width: 900px)
+                        height: 22px
+                

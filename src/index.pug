@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        title Hackathon
+        meta(name="description", content="Hackathon")
+        
+        meta(name="og:title", content="Hackathon")
+        meta(name="og:description", content="Hackathon")
+        meta(name="og:image", content="")
+
+        meta(name="twitter:card", content="summary_large_image")
+        meta(name="twitter:image", content="")
+        meta(name="telegram_channel", content="Hackathon")
+
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-J76SQ67RJB');
+
+        link(href="./css/fonts.css", rel="stylesheet")
+        link(href="./css/styles.css", rel="stylesheet")
+        script(src="https://code.jquery.com/jquery-3.7.1.min.js", integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=", crossorigin="anonymous")
+        script(src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js")
+        script(type="module",src="https://unpkg.com/@splinetool/viewer@1.9.2/build/spline-viewer.js")
+
+    body 
+        include menu/index.pug
+        include header/index.pug
+        include usd/index.pug
+        include task/index.pug
+        include judges/index.pug
+        include partners/index.pug
+        include blog/index.pug
+        include faq/index.pug
+        include footer/index.pug
+
+        script(type="module", src="js/index.js")

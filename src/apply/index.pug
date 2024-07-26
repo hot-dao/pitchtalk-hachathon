@@ -1,0 +1,22 @@
+.apply
+    .wrapper
+        .apply-left
+            .apply-title HOT Protocol Hackathon
+            .apply-sub
+                span 08 Jul, 2024 - 26 Jul, 2024
+            
+            .apply-left__fon
+                spline-viewer(url="https://prod.spline.design/eoUkeyUxf4zUijk5/scene.splinecode")
+        .apply-right
+            .apply-prev
+                h2 Apply
+                p We’ll send you a confirmation e-mail as soon as possible
+            form(action="/submit" method="post").apply-form
+                input.apply-input(placeholder="Name")
+                input.apply-input(placeholder="Email")
+                select.apply-select(name="role")
+                    option(value="role1") Role 1
+                    option(value="role2") Role 2
+                    option(value="role3") Role 3
+                button.apply-button.btn.btn_yellow Send
+                

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
+*,
+*:after,
+*before
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	outline: none
+html
+	width: 100%
+	height: 100%
+	-ms-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
+body
+	width: 100%
+	height: 100%
+	background-color: #0E0F12
+	font-family: "Geist"
+	overflow-x: hidden
+	-webkit-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+	text-size-adjust: 100%
+	text-rendering: optimizeLegibility
+	font-optical-sizing: auto
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	margin: 0
+a
+	text-decoration: none
+:root
+	--width-wrapper: 1312px
+	--width-wrapper-max: calc( 100% - 64px )
+	--margin-wrapper: 0 auto
+	--icon-light-light: #fff
+	@media (max-width: 720px)
+		--padding-wrapper: 16px
+		--width-wrapper-max: calc( 100% - 32px )
+
+.overflow-hidden
+	overflow: hidden
+
+.wrapper
+	width: var(--width-wrapper)
+	max-width: var(--width-wrapper-max)
+	margin: 0 auto
+
+	@media (max-width: 1000px)
+
+.btn
+	display: inline-flex
+	text-align: center
+	font-size: 18px
+	font-style: normal
+	font-weight: 600
+	line-height: 124.124%
+	letter-spacing: -0.36px
+	border-radius: 16px
+	text-decoration: none
+	cursor: pointer
+	@media (max-width: 720px)
+		font-size: 16px
+	
+	&_gray
+		border: 1px solid rgba(255, 255, 255, 0.08)
+		background: rgba(255, 255, 255, 0.15)
+		box-shadow: 0px 2px 3.3px 0px rgba(224, 137, 0, 0.08)
+		color: #E6E6E6
+			
+	&_yellow
+		border: 1px solid rgba(255, 255, 255, 0.08)
+		background: #DCBA60
+		box-shadow: 0px 2px 3.3px 0px rgba(224, 137, 0, 0.08)
+		color: #0E0F12
+		text-align: center
+		font-size: 16px
+		font-style: normal
+		font-weight: 600
+		line-height: 124.124%
+		letter-spacing: -0.32px
+.block-prev
+	h2
+		margin: 0 0 20px 0
+		color: #fff
+		text-align: center
+		font-size: 80px
+		font-style: normal
+		font-weight: 400
+		line-height: normal
+		letter-spacing: -6.4px
+		@media (max-width: 900px)
+			margin: 0 0 12px 0
+			font-size: 64px
+			letter-spacing: -5.12px
+		@media (max-width: 700px)
+			font-size: 48px
+			letter-spacing: -0.4px
+	p
+		margin: 0 auto 64px auto
+		font-family: "Inter", sans-serif
+		color: #BFBFBF
+		font-size: 24px
+		font-style: normal
+		font-weight: 400
+		line-height: normal
+		letter-spacing: -0.48px
+		text-align: center
+		@media (max-width: 900px)
+			margin: 0 auto 48px auto
+			font-size: 20px
+			letter-spacing: -0.4px

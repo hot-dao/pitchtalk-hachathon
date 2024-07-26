@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Geist";
+  src: url("../fonts/variable-woff/GeistVF.woff2") format("woff2"),
+    url("../fonts/variable-woff/GeistVF.woff") format("woff"),
+    url("../fonts/variable-ttf/GeistVF.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: block;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Geist Black";
+  src: url("./statics-woff/Geist-Black.woff2") format("woff2"),
+    url("./statics-woff/Geist-Black.woff") format("woff"),
+    url("./statics-ttf/Geist-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: block;
+  font-style: normal;
+}

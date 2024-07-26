@@ -1,0 +1,53 @@
+.blog
+    width: 100%
+    padding: 120px 0 96px 0
+    background-color: #17181B
+    @media (max-width: 900px)
+        padding: 80px 0 56px 0
+        background: linear-gradient(180deg, #17181B 0%, #0E0F12 100%)
+    @media (max-width: 700px)
+        padding: 60px 0
+    .wrapper
+        position: relative
+        z-index: 1
+
+    &-list
+        width: 100%
+        &__item
+            width: calc( 33.3333% - 16px )
+            margin: 0 0 24px 0
+            border-radius: 16px
+            border: 1px solid rgba(255, 255, 255, 0.15)
+            overflow: hidden
+            background: rgba(255, 255, 255, 0.10)
+            @media (max-width: 900px)
+                width: calc( 50% - 12px )
+            @media (max-width: 700px)
+                width: 100%
+            img
+                display: block
+                width: 100%
+                height: auto
+                border-radius: 4px
+            &-content
+                padding: 24px
+                h3
+                    margin: 0 0 16px 0
+                    color: #E6E6E6
+                    font-family: "Inter", sans-serif
+                    font-size: 32px
+                    font-style: normal
+                    font-weight: 500
+                    line-height: normal
+                    letter-spacing: -0.64px
+                    @media (max-width: 700px)
+                        font-size: 24px
+                        letter-spacing: -0.48px
+                p
+                    color: #BFBFBF
+                    font-family: "Inter", sans-serif
+                    font-size: 18px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: normal
+                    letter-spacing: -0.36px

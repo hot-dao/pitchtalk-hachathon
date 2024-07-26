@@ -1,0 +1,288 @@
+.judges
+    width: 100%
+    padding: 120px 0
+    background-color: #17181B
+    @media (max-width: 900px)
+        padding: 80px 0
+    @media (max-width: 700px)
+        padding: 60px 0
+    .wrapper
+        position: relative
+        z-index: 1
+        @media (max-width: 1180px)
+            width: calc( 100% - 24px )
+            max-width: unset
+        @media (max-width: 720px)
+            width: calc( 100% - 16px )
+        h2
+            margin: 0 0 64px 0
+            color: #fff
+            text-align: center
+            font-size: 80px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            letter-spacing: -6.4px
+            @media (max-width: 900px)
+                margin: 0 0 80px 0
+            @media (max-width: 700px)
+                margin: 0 0 48px 0
+                font-size: 48px
+                letter-spacing: -3.84px
+    
+    &-list
+        position: relative
+        min-height: 1210px
+        @media (max-width: 1180px)
+            width: 744px
+            max-width: 100%
+            min-height: 1414px
+            margin: 0 auto
+        @media (max-width: 700px)
+            width: 375px
+        @media (max-width: 360px)
+            width: 100%
+        &__item
+            position: absolute
+            &::before
+                content: ""
+                display: block
+                position: absolute
+                left: -24px
+                top: 0
+                bottom: 0
+                width: 1px
+                background-color: #4D4D4D
+                @media (max-width: 720px)
+                    left: -14px
+                    height: calc(100% - 67px) !important
+            img
+                display: block
+                width: 197px
+                margin: 0 0 32px 0
+                border-radius: 5px
+                @media (max-width: 1260px)
+                    width: 188px
+                @media (max-width: 720px)
+                    width: 140px
+                @media (max-width: 360px)
+                    width: 110px
+            p
+                font-family: "Inter", sans-serif
+                color: #BFBFBF
+                font-size: 18px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                letter-spacing: -0.36px
+                @media (max-width: 720px)
+                    max-width: 140px
+                    font-size: 16px
+                    letter-spacing: -0.32px
+                @media (max-width: 360px)
+                    max-width: 100px
+                    font-size: 14px
+        &__column
+            &:nth-child(1)
+                .judges-list__item:nth-child(1)
+                    left: 32px
+                    top: 0
+                    z-index: 50
+                    padding: 117px 0 0 0
+                    &::before
+                        height: calc( 100% - 71px )
+                .judges-list__item:nth-child(2)
+                    left: 366px
+                    top: 0
+                    z-index: 51
+                    padding: 277px 0 0 0
+                    &::before
+                        height: calc( 100% - 71px )
+                .judges-list__item:nth-child(3)
+                    left: 302px
+                    top: 0
+                    z-index: 50
+                    padding: 781px 0 0 64px
+                    &::before
+                        height: calc( 100% - 43px )
+                    &::after
+                        content: ""
+                        display: block
+                        position: absolute
+                        left: -23px
+                        bottom: 43px
+                        width: 56px
+                        height: 1px
+                        background-color: #4D4D4D
+            
+
+                @media (max-width: 1300px)
+                    .judges-list__item:nth-child(1)
+                        left: 16px
+                    .judges-list__item:nth-child(2)
+                        left: 350px
+                    .judges-list__item:nth-child(3)
+                        left: 286px
+                        padding: 781px 0 0 32px
+                        &::after
+                            width: 24px
+                @media (max-width: 1260px)
+                    .judges-list__item:nth-child(1)
+                        left: 16px
+                    .judges-list__item:nth-child(2)
+                        left: 302px
+                    .judges-list__item:nth-child(3)
+                        left: 270px
+                @media (max-width: 1180px)
+                    .judges-list__item:nth-child(1)
+                        left: 32px
+                    .judges-list__item:nth-child(2)
+                        left: 32px
+                        z-index: 49
+                        padding: 764px 0 0 0
+                    .judges-list__item:nth-child(3)
+                        left: 268px
+                        padding: 416px 0 0 0
+                        &::after
+                            display: none
+                        &::before
+                            height: calc( 100% - 43px )
+                @media (max-width: 720px)
+                    .judges-list__item:nth-child(1)
+                        left: 28px
+                        z-index: 52
+                        padding: 133px 0 0 0
+                    .judges-list__item:nth-child(2)
+                        left: 28px
+                        z-index: 51
+                        padding: 547px 0 0 0
+                    .judges-list__item:nth-child(3)
+                        left: 28px
+                        z-index: 50
+                        padding: 891px 0 0 0
+                @media (max-width: 360px)
+                    .judges-list__item:nth-child(1)
+                        left: 16px
+                    .judges-list__item:nth-child(2)
+                        left: 16px
+                    .judges-list__item:nth-child(3)
+                        left: 16px
+
+                            
+            
+
+            &:nth-child(2)
+                .judges-list__item:nth-child(1)
+                    left: 685px
+                    top: 0
+                    padding: 197px 0 0 0
+                    &::before
+                        height: calc( 100% - 51px )
+                .judges-list__item:nth-child(2)
+                    left: 1026px
+                    top: 0
+                    padding: 357px 0 0 0
+                    &::before
+                        height: calc( 100% - 51px )
+                .judges-list__item:nth-child(3)
+                    left: 962px
+                    top: 0
+                    padding: 896px 0 0 64px
+                    &::before
+                        height: calc( 100% - 43px )
+                    &::after
+                        content: ""
+                        display: block
+                        position: absolute
+                        left: -23px
+                        bottom: 43px
+                        width: 56px
+                        height: 1px
+                        background-color: #4D4D4D
+            
+
+                @media (max-width: 1300px)
+                    .judges-list__item:nth-child(1)
+                        left: 685px
+                    .judges-list__item:nth-child(2)
+                        left: 1010px
+                    .judges-list__item:nth-child(3)
+                        left: 946px
+                        padding: 896px 0 0 32px
+                        &::after
+                            width: 24px
+                @media (max-width: 1260px)
+                    .judges-list__item:nth-child(1)
+                        left: 590px
+                    .judges-list__item:nth-child(2)
+                        left: 922px
+                    .judges-list__item:nth-child(3)
+                        left: 890px
+                @media (max-width: 1180px)
+                    .judges-list__item:nth-child(1)
+                        left: 268px
+                        padding: 1068px 0 0 0
+                    .judges-list__item:nth-child(2)
+                        left: 503px
+                        padding: 197px 0 0 0
+                    .judges-list__item:nth-child(3)
+                        left: 503px
+                        padding: 771px 0 0 0
+                        &::after
+                            display: none
+                        &::before
+                            height: calc( 100% - 43px )
+                @media (max-width: 720px)
+                    .judges-list__item:nth-child(1)
+                        left: 204px
+                        padding: 311px 0 0 0
+                    .judges-list__item:nth-child(2)
+                        left: 204px
+                        padding: 770px 0 0 0
+                    .judges-list__item:nth-child(3)
+                        left: 204px
+                        padding: 1189px 0 0 0
+                        &::before
+                            height: calc( 100% - 48px ) !important
+                @media (max-width: 360px)
+                    .judges-list__item:nth-child(1)
+                        left: 150px
+                    .judges-list__item:nth-child(2)
+                        left: 150px
+                    .judges-list__item:nth-child(3)
+                        left: 150px
+
+        &__title
+            display: flex
+            align-items: center
+            gap: 16px
+            margin: 0 0 8px -32px
+            @media (max-width: 720px)
+                gap: 10px
+                margin: 0 0 8px -26px
+            @media (max-width: 360px)
+                gap: 6px
+                margin: 0 0 8px -22px
+            span
+                display: block
+                position: relative
+                z-index: 52
+                width: 16px
+                height: 16px
+                border: 1px #4D4D4D solid
+                background-color: #17181b
+                border-radius: 50%
+            h3
+                color: #E6E6E6
+                font-size: 24px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                letter-spacing: -0.48px
+                @media (max-width: 720px)
+                    font-size: 18px
+                    letter-spacing: -0.4px
+                @media (max-width: 360px)
+                    font-size: 16px
+                    left: -0.32px
+        

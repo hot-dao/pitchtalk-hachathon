@@ -1,0 +1,132 @@
+.menu
+    position: relative
+    z-index: 100
+    padding: 12px 0
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10)
+    background: #484848
+    .wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 900px)
+            justify-content: flex-start
+        .logo
+            display: flex
+            align-items: center
+            width: 91px
+            @media (max-width: 900px)
+            img
+                width: 100%
+        .link-lists
+            display: flex
+            gap: 32px
+            margin: 0 0 0 102px
+            @media (max-width: 900px)
+                display: none
+            .link
+                color: rgba(255, 255, 255, 0.85)
+                font-size: 18px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                letter-spacing: -0.36px
+                text-decoration: none
+        .btn_header
+            padding: 16px 32px
+            @media (max-width: 900px)
+                margin: 0 0 0 auto
+            @media (max-width: 700px)
+                span
+                    display: none
+
+.menu-group
+    display: flex
+    align-items: center
+    gap: 16px
+    .icon-burger
+        display: none
+        width: 32px
+        height: 32px
+        cursor: pointer
+        @media (max-width: 900px)
+            display: block
+            .burger-open
+                display: none
+.menu
+    &-social
+        &__list
+            display: none
+            border-radius: 16px
+            border: 1px solid rgba(255, 255, 255, 0.25)
+            background-color: #25282B
+            overflow: hidden
+        &__item
+            display: block
+            box-sizing: content-box
+            width: 24px
+            height: 24px
+            padding: 20px 24px
+            background-repeat: no-repeat
+            background-position: 50%
+            &:hover
+                background-color: #121314
+            &_x
+                background-image: url(../images/x.svg)
+            &_you
+                border-left: 1px solid rgba(255, 255, 255, 0.25)
+                border-right: 1px solid rgba(255, 255, 255, 0.25)
+                background-image: url(../images/youtube.svg)
+            &_tel
+                background-image: url(../images/tel.svg)
+    @media (max-width: 900px)
+        display: flex
+
+
+.menu.active
+    @media (max-width: 900px)
+        flex-direction: column
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        width: 100%
+        height: 100vh
+        padding: 24px 32px 60px 32px
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 100%), #0E0F12
+        overflow: hidden
+        .wrapper
+            flex-direction: column
+            align-items: flex-start
+            width: 100%
+            max-width: unset
+            height: 100%
+            padding: 0
+            overflow: auto
+            .btn_header
+                display: none
+            .link-lists
+                display: inline-flex
+                flex-direction: column
+                gap: 24px
+                margin: 0
+                padding: 136px 0 0 0
+                @media (max-width: 900px)
+                    padding: 112px 0 0 0
+                &-link
+                    font-size: 24px
+                    letter-spacing: -0.48px
+            .menu-social__list
+                align-self: center
+                display: flex
+                margin: auto 0 0 0
+        
+        .icon-burger
+            display: flex
+            align-items: center
+            justify-content: center
+        .burger-closet
+            display: none
+        .burger-open
+            display: block
+            width: 38px
+            height: 38px
