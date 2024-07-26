@@ -1,6 +1,10 @@
 .header
-    .header__fon
-        spline-viewer(url="https://prod.spline.design/nrzGdJ7plmK7yF3Y/scene.splinecode")
+    video(autoplay loop muted playsinline).header__fon
+        source(src="./images/shining-2.mp4" type="video/mp4")
+        source(src="./images/shining.webm" type="video/webm")
+        source(src="./images/shining.ogv" type="video/ogg")
+        | Your browser does not support the video tag.
+        
     .wrapper
         .header-title
             h4 HOT Protocol
@@ -9,7 +13,7 @@
             span 08 Jul, 2024 - 26 Jul, 2024
         .header-content
             p Join us for a month of intense development, workshops, and collaboration. The winning app will be integrated into the HOT App, providing a unique opportunity to make a real impact
-        a(href="#").btn.btn_yellow.header-btn Learn more
+        a(href="https://pitchtalk.com/en/events/Hot-App-Hackathon",target="_blank").btn.btn_yellow.header-btn Learn more
         .header-partners
             img(src="./images/near-dev-hub.svg")
             img(src="./images/here.svg")
