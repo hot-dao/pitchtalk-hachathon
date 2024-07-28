@@ -1,10 +1,5 @@
 .header
-    video(autoplay loop muted playsinline).header__fon
-        source(src="./images/shining-2.mp4" type="video/mp4")
-        source(src="./images/shining.webm" type="video/webm")
-        source(src="./images/shining.ogv" type="video/ogg")
-        | Your browser does not support the video tag.
-        
+    <spline-viewer class="header__fon" url="https://prod.spline.design/nrzGdJ7plmK7yF3Y/scene.splinecode"></spline-viewer> 
     .wrapper
         .header-title
             h4 HOT Protocol
@@ -19,3 +14,5 @@
             img(src="./images/here.svg")
             img(src="./images/pitchtalk.svg")
             img(src="./images/incrypted.svg")
+
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.3/build/spline-viewer.js"></script>
