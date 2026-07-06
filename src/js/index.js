@@ -73,7 +73,9 @@ var buttons = document.querySelectorAll('[data-url]');
 
 // Добавляем обработчик событий для каждой кнопки
 buttons.forEach(function(button) {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function(event) {
+        event.preventDefault();
+
         var dataUrl = button.getAttribute('data-url');
         var targetElement = document.getElementById(dataUrl);
 
